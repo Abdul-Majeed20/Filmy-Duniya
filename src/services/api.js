@@ -49,7 +49,7 @@ export const fetchMovieDetailsApi = async (movieId) => {
 export const updateSearchCount = async (searchTerm, movie) => {
   try {
     const response = await fetch(
-      "http://localhost:3000/api/v1/updateSearch",
+      "https://filmy-duniya-backend.vercel.app/api/v1/updateSearch",
       {
         method: "POST",
         headers: {
@@ -70,7 +70,7 @@ export const updateSearchCount = async (searchTerm, movie) => {
 export const getTrendingMovies = async () => {
   try {
     const response = await fetch(
-      "http://localhost:3000/api/v1/get-trending",
+      "https://filmy-duniya-backend.vercel.app/api/v1/get-trending",
       {
         method: "GET",
         headers: {
